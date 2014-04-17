@@ -68,3 +68,7 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
+stof_doctrion:
+	orm:
+		default:
+			timestampable:true

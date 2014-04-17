@@ -24,7 +24,7 @@ class CarClass
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=20, nullable=false)
-     */
+	 */
     private $name;
 
     /**
@@ -87,6 +87,7 @@ class CarClass
      * @var \DateTime
      *
      * @ORM\Column(name="created_at", type="datetime", nullable=false)
+	 * @Gedmo\Timestampable(on="create")
      */
     private $createdAt;
 
@@ -94,6 +95,7 @@ class CarClass
      * @var \DateTime
      *
      * @ORM\Column(name="updated_at", type="datetime", nullable=false)
+	 * @Gedmo\Timestampable(on="update")
      */
     private $updatedAt;
 

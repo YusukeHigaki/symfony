@@ -32,6 +32,7 @@ class Location
      * @var \DateTime
      *
      * @ORM\Column(name="created_at", type="datetime", nullable=false)
+	 * @Gedmo\Timestampable(on="create")
      */
     private $createdAt;
 
@@ -39,6 +40,7 @@ class Location
      * @var \DateTime
      *
      * @ORM\Column(name="updated_at", type="datetime", nullable=false)
+	 * @Gedmo\Timestampable(on="update")
      */
     private $updatedAt;
 

@@ -19,7 +19,8 @@ class AppKernel extends Kernel
             new Acme\HelloBundle\AcmeHelloBundle(),
             new My\BlogBundle\MyBlogBundle(),
             new Acme\RentacarBundle\AcmeRentacarBundle(),
-        );
+			new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+		);
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
