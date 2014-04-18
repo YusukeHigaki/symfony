@@ -1,14 +1,8 @@
-acme_rentacar:
+homepage:
+    pattern:  /
+    defaults: { _controller: AcmeRentacarBundle:Reservation:index }
+
+AcmeRentacarBundle:
     resource: "@AcmeRentacarBundle/Controller/"
     type:     annotation
     prefix:   /
-
-blog:
-    resource: "@MyBlogBundle/Resources/config/routing.yml"
-    prefix:   /blog
-
-acme_hello:
-    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
-    prefix:   /
-
-

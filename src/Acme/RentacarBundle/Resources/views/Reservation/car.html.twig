@@ -1,0 +1,67 @@
+{% extends "AcmeRentacarBundle::base.html.twig" %}
+
+{% block page_title '車種選択' %}
+{% set menu = 'reservation' %}
+
+{% block content %}
+<div class="car-class-box well">
+<h3>Aクラス</h3>
+<div class="row">
+<div class="span2 thumbnail">
+<img src="{{ asset('bundles/acmerentacar/images/car/prius.png') }}" alt="A">
+</div>
+
+<div class="span2">
+<dl class="car-specs">
+<dt>車種</dt>
+<dd>プリウス、SAIなど</dd>
+<dt>定員</dt>
+<dt>免責補償</dt>
+<dd>&yen;1000 / 24h （税込み）</dd>
+</dl>
+</div>
+
+<div class="span5">
+<h4>料金表（税込み）</h4>
+<table class="table table-bordered price-table">
+<thead>
+<tr>
+<th>3時間</th>
+<th>6時間</th>
+<th>12時間</th>
+<th>24時間</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&yen;5000</td>
+<td>&yen;7000</td>
+<td>&yen;9000</td>
+<td>&yen;11000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="row">
+<div class="offset2 span7">
+<hr>
+<form action="{{ path('reservation_car') }}" method="post">
+<div class="form-actions">
+<button class="btn btn-primary">この車種を選択する</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+<div class="form-stacked">
+<div class="actions">
+<a href="{{ path('reservation_new') }}" class="btn">&laquo; 戻る</a>
+</div>
+</div>
+
+
+
+{% endblock %}
