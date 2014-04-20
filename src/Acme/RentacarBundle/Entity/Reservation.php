@@ -3,6 +3,8 @@
 namespace Acme\RentacarBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Reservation
@@ -39,13 +41,15 @@ class Reservation
      * @var integer
      *
      * @ORM\Column(name="departure_location_id", type="integer", nullable=false)
-     */
+	 * @Assert\NotBlank(groups={"reservation_location"})
+	 */
     private $departureLocationId;
 
     /**
      * @var integer
      *
      * @ORM\Column(name="return_location_id", type="integer", nullable=false)
+	 * @Assert\NotBlank(groups={"reservation_location"})
      */
     private $returnLocationId;
 
@@ -53,6 +57,8 @@ class Reservation
      * @var \DateTime
      *
      * @ORM\Column(name="departure_at", type="datetime", nullable=false)
+	 * @Assert\NotBlank(groups={"reservation_location"})
+	 * @Assert\Type("\DateTime")(groups={"reservation_location"})
      */
     private $departureAt;
 
@@ -60,6 +66,8 @@ class Reservation
      * @var \DateTime
      *
      * @ORM\Column(name="return_at", type="datetime", nullable=false)
+	 * @Assert\NotBlank(groups={"reservation_location"})
+	 * @Assert\Type("\DateTime")(groups={"reservation_location"})
      */
     private $returnAt;
 
@@ -114,6 +122,61 @@ class Reservation
      */
     private $updatedAt;
 
+
+    /**
+     * @var User
+     *
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * })
+     */
+    private $user;
+
+    /**
+     * @var CarClass
+     *
+     * @ORM\ManyToOne(targetEntity="CarClass")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="car_class_id", referencedColumnName="id")
+     * })
+     * @Assert\NotBlank(groups={"reservation_car"})
+     */
+    private $carClass;
+
+    /**
+     * @var Location
+     *
+     * @ORM\ManyToOne(targetEntity="Location")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="departure_location_id", referencedColumnName="id")
+     * })
+     * @Assert\NotBlank(groups={"reservation_location"})
+     */
+    private $departureLocation;
+
+    /**
+     * @var Location
+     *
+     * @ORM\ManyToOne(targetEntity="Location")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="return_location_id", referencedColumnName="id")
+     * })
+     * @Assert\NotBlank(groups={"reservation_location"})
+     */
+    private $returnLocation;
+
+
+	/**
+	 * Constructor.
+	 */ 
+	public function __construct()
+	{
+		$this->departureAt = new \DateTime();
+		$this->departureAt->setTime(0,0);
+		$this->returnAt = new \DateTime();
+		$this->returnAt->setTime(0,0);
+	}
 
 
     /**
@@ -423,5 +486,85 @@ class Reservation
     public function getUpdatedAt()
     {
         return $this->updatedAt;
+    }
+
+	/**
+     * Set user
+     *
+     * @param Acme\RentacarBundle\Entity\User $user
+     */
+    public function setUser(\Acme\RentacarBundle\Entity\User $user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * Get user
+     *
+     * @return Acme\RentacarBundle\Entity\User 
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Set carClass
+     *
+     * @param Acme\RentacarBundle\Entity\CarClass $carClass
+     */
+    public function setCarClass(\Acme\RentacarBundle\Entity\CarClass $carClass)
+    {
+        $this->carClass = $carClass;
+    }
+
+    /**
+     * Get carClass
+     *
+     * @return Acme\RentacarBundle\Entity\CarClass 
+     */
+    public function getCarClass()
+    {
+        return $this->carClass;
+    }
+
+    /**
+     * Set departureLocation
+     *
+     * @param Acme\RentacarBundle\Entity\Location $departureLocation
+     */
+    public function setDepartureLocation(\Acme\RentacarBundle\Entity\Location $departureLocation)
+    {
+        $this->departureLocation = $departureLocation;
+    }
+
+    /**
+     * Get departureLocation
+     *
+     * @return Acme\RentacarBundle\Entity\Location 
+     */
+    public function getDepartureLocation()
+    {
+        return $this->departureLocation;
+    }
+
+    /**
+     * Set returnLocation
+     *
+     * @param Acme\RentacarBundle\Entity\Location $returnLocation
+     */
+    public function setReturnLocation(\Acme\RentacarBundle\Entity\Location $returnLocation)
+    {
+        $this->returnLocation = $returnLocation;
+    }
+
+    /**
+     * Get returnLocation
+     *
+     * @return Acme\RentacarBundle\Entity\Location 
+     */
+    public function getReturnLocation()
+    {
+        return $this->returnLocation;
     }
 }

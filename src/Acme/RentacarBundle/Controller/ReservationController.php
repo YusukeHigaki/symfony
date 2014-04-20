@@ -5,7 +5,8 @@ namespace Acme\RentacarBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
-
+use Acme\RentacarBundle\Entity\Reservation;
+use Acme\RentacarBundle\Form\ReservationLocationType;
 
 /**
  * ReservationController.
@@ -32,12 +33,24 @@ Class ReservationController extends AppController
  */
 	public function newAction(Request $request)
 	{
+		$reservation = new Reservation();
+		$form = $this->createForm(new ReservationLocationType(),$reservation);
 		if('POST' === $request->getMethod()){
-			return $this->redirect($this->generateUrl('reservation_car'));
+			$data = $request->request->get($form->getName());
+			$form->bind($data);
+			if($form->isValid){
+				$request->getSession()->set('reservation_location',$data);
+				return $this->redirect($this->generateUrl('reservation_car'));
+			}
+		}elseif($request->getSession()->has('reservation/location')){
+			$data['_token'] = $form['_token']->getData();
+			$form->bind($data);
 		}
 
-		return array();
-	}
+		return array(
+			'form' => $form->createView(),
+		);
+}
 
 
 /**
