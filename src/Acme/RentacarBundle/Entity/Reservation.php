@@ -10,7 +10,8 @@ use Gedmo\Mapping\Annotation as Gedmo;
  * Reservation
  *
  * @ORM\Table(name="reservation")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Acme\RentacarBundle\Entity\ReservationRepository")
+
  */
 class Reservation
 {

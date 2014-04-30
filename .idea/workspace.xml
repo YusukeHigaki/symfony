@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="137a3b2a-8395-4f52-944e-046ff5256174" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/StoreBundle/Entity/Category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/StoreBundle/Form/Type/CateogoryType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/StoreBundle/Entity/Product.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/StoreBundle/Form/Type/ProductType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationOptionType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/_car.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/StoreBundle/Resources/config/validation.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/.routing.yml.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/CarClass.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/CarClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/ReservationService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/reservation.txt.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/DependencyInjection/AcmeRentacarExtension.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/DependencyInjection/AcmeRentacarExtension.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/Reservation.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/Reservation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationLocationType.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationLocationType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/_car.html.twig" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/_car.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/car.html.twig" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/car.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/new.html.twig" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="symfony.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,57 +36,41 @@
       <file leaf-file-name="ReservationController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="10" selection-start="4225" selection-end="4225" vertical-scroll-proportion="-14.458333" vertical-offset="1723" max-vertical-offset="3120">
+            <state line="140" column="36" selection-start="4395" selection-end="4395" vertical-scroll-proportion="-10.708333" vertical-offset="1753" max-vertical-offset="3240">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReservationService.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/ReservationService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="12" selection-start="1293" selection-end="1293" vertical-scroll-proportion="-8.52" vertical-offset="444" max-vertical-offset="1080">
               <folding>
-                <element signature="e#50#109#0" expanded="true" />
+                <element signature="e#6#95#0" expanded="true" />
+                <element signature="e#137#183#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirm.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/confirm.html.twig">
+      <file leaf-file-name="reservation.txt.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/reservation.txt.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="43" selection-start="449" selection-end="449" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1185">
+            <state line="24" column="2" selection-start="457" selection-end="457" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReservationOptionType.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationOptionType.php">
+      <file leaf-file-name="MailService.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="276" selection-end="276" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="555">
+            <state line="64" column="0" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.5730897" vertical-offset="615" max-vertical-offset="1260">
               <folding>
-                <element signature="e#134#174#0" expanded="true" />
+                <element signature="e#6#95#0" expanded="true" />
+                <element signature="e#137#180#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reservation.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/Reservation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="593" column="9" selection-start="11595" selection-end="11595" vertical-scroll-proportion="0.53367877" vertical-offset="8556" max-vertical-offset="9255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="option.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/option.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="41" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="555">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_amount_table.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/_amount_table.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="420">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -134,8 +109,15 @@
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationCarType.php" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/_car.html.twig" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationOptionType.php" />
-        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/Reservation.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/DependencyInjection/AcmeRentacarExtension.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/ResrevationService.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/ReservationService.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/reservation.txt.twig" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php" />
       </list>
     </option>
   </component>
@@ -219,13 +201,157 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RentacarBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RentacarBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RentacarBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RentacarBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistory" value="commit&#10;git&#10;project setting&#10;version&#10;Reservation/_ca&#10;config.y&#10;restoreReservation&#10;editor&#10;font&#10;carClass&#10;ReservationType" />
+    <property name="SearchEverywhereHistory" value="&#10;commit&#10;git&#10;project setting&#10;version&#10;Reservation/_ca&#10;config.y&#10;restoreReservation&#10;editor&#10;font&#10;carClass&#10;ReservationType" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -311,8 +437,8 @@
     <frame x="267" y="1102" width="1366" height="746" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33540374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32815734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42813456" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06670224" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -320,7 +446,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26359516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33486238" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -396,9 +522,7 @@
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="127" column="51" selection-start="3803" selection-end="3803" vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="2985">
-          <folding>
-            <element signature="e#50#109#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -514,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.36105034" vertical-offset="0" max-vertical-offset="914">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/_car.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="1430" selection-end="1430" vertical-scroll-proportion="0.6728665" vertical-offset="0" max-vertical-offset="914">
@@ -546,7 +663,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.44041452" vertical-offset="0" max-vertical-offset="579">
           <folding>
-            <element signature="e#6#95#0" expanded="true" />
+            <element signature="e#6#95#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -555,7 +672,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="22" selection-start="916" selection-end="916" vertical-scroll-proportion="0.7475083" vertical-offset="0" max-vertical-offset="690">
           <folding>
-            <element signature="e#47#104#0" expanded="true" />
+            <element signature="e#47#104#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -573,7 +690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="16" selection-start="199" selection-end="199" vertical-scroll-proportion="0.19933555" vertical-offset="0" max-vertical-offset="602">
           <folding>
-            <element signature="e#45#98#0" expanded="true" />
+            <element signature="e#45#98#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -620,30 +737,128 @@
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/_amount_table.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="10" selection-start="4225" selection-end="4225" vertical-scroll-proportion="-14.458333" vertical-offset="1723" max-vertical-offset="3120">
           <folding>
-            <element signature="e#50#109#0" expanded="true" />
+            <marker date="1397801027000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397801027000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397801027000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397801027000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397801027000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397801027000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397801027000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/confirm.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="449" selection-end="449" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1185">
+        <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="4440">
+          <folding>
+            <element signature="e#46#78#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/DependencyInjection/AcmeRentacarExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="883" selection-end="883" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <element signature="e#59#118#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.6787565" vertical-offset="72" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/Reservation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="593" column="9" selection-start="11595" selection-end="11595" vertical-scroll-proportion="0.53367877" vertical-offset="8556" max-vertical-offset="9255">
+        <state line="2" column="14" selection-start="21" selection-end="22" vertical-scroll-proportion="0.051813472" vertical-offset="0" max-vertical-offset="9270">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/confirm.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="303" selection-end="303" vertical-scroll-proportion="0.41450778" vertical-offset="0" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.27363184" vertical-offset="0" max-vertical-offset="603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/finish.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="0.29900333" vertical-offset="0" max-vertical-offset="602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/ReservationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="330" selection-end="330" vertical-scroll-proportion="0.28753993" vertical-offset="0" max-vertical-offset="626">
+          <folding>
+            <marker date="1398848587000" expanded="true" signature="-1:-1" placeholder="services:" />
+            <marker date="1398848587000" expanded="true" signature="-1:-1" placeholder="rentacar.reservation_service:" />
+            <marker date="1398848587000" expanded="true" signature="-1:-1" placeholder="arguments:" />
+            <marker date="1398848587000" expanded="true" signature="-1:-1" placeholder="rentacar.mail_service:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="36" selection-start="4395" selection-end="4395" vertical-scroll-proportion="-10.708333" vertical-offset="1753" max-vertical-offset="3240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/reservation.txt.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="2" selection-start="457" selection-end="457" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/ReservationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="12" selection-start="1293" selection-end="1293" vertical-scroll-proportion="-8.52" vertical-offset="444" max-vertical-offset="1080">
+          <folding>
+            <element signature="e#6#95#0" expanded="true" />
+            <element signature="e#137#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.5730897" vertical-offset="615" max-vertical-offset="1260">
+          <folding>
+            <element signature="e#6#95#0" expanded="true" />
+            <element signature="e#137#180#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

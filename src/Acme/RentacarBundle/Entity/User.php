@@ -9,7 +9,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
  * User
  *
  * @ORM\Table(name="user")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Acme\RentacarBundle\Entity\UserRepository")
  */
 class User
 {

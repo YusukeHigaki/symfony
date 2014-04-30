@@ -134,6 +134,20 @@ Class ReservationController extends AppController
             return $this->redirect($this->generateUrl('reservation_new'));
         }
         $reservation->calculateAmount();
+
+        if('POST' === $request->getMethod()){
+            $user = $this->get('doctrine')->getRepository('AcmeRentacarBundle:User')->find(1);
+            $service = $this->get('rentacar.reservation_service');
+            $service->saveReservation($reservation , $user);
+
+            $session = $request->getSession();
+            $session->remove('reservation/location');
+            $session->remove('reservation/car');
+            $session->remove('reservation/optioin');
+
+            return $this->redirect($this->generateUrl('reservation_finish'));
+        }
+
         return array(
             'reservation' => $reservation,
         );
