@@ -1,0 +1,6 @@
+Acme\StoreBundle\Entity\Product:
+    properties:
+        name:
+            - NotBlank: ~
+        price:
+            - NotBlank: ~

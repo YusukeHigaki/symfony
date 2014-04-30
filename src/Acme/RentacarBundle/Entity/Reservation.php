@@ -567,4 +567,47 @@ class Reservation
     {
         return $this->returnLocation;
     }
+
+    /**
+     *  Calculate amount.
+     */
+
+    public function calculateAmount()
+    {
+        $diff = $this->getReturnAt()->diff($this->departureAt);
+
+
+        $hours = ($diff->d*24) + $diff->h + ($diff->i ? 1:0);
+        $days = floor($hours/24);
+        $hours = $hours%24;
+
+        //car subtotal
+        $carSubtotal = 0;
+        if($days>0){
+            $carSubtotal += ($days*$this->carClass->getPrice24());
+        }
+        elseif($hours>12){
+            $carSubtotal += $this->carClass->getPrice24();
+        }
+        elseif($hours>6){
+            $carSubtotal += $this->carClass->getPrice12();
+        }
+        elseif($hours>3){
+            $carSubtotal += $this->carClass->getPrice6();
+        }
+        elseif($hours>0){
+            $carSubtotal += $this->carClass->getPrice3();
+        }
+        //option subtotal
+        $optionSubtotal = 0;
+        if($this->useInsurance){
+            $optionSubtotal += ($days + ($hours > 0 ? 1:0))*$this->carClass->getInsurancePrice();
+        }
+
+        $this->carSubtotal = $carSubtotal;
+        $this->optionSubtotal = $optionSubtotal;
+        $this->totalAmount = $carSubtotal + $optionSubtotal;
+
+    }
+
 }

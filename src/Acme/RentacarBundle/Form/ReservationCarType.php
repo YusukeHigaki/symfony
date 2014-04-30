@@ -5,24 +5,20 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 /**
- * ReservationLocationType
- * 
+ * ReservationCarType.
+ *
  * Author Yusuke Higaki <yusukehigaki0302@gmail.com>
  */
 
-class ReservationLocationType extends AbstractType
+class ReservationCarType extends AbstractType
 {
 	/**
 	 * @inheritDoc
 	 */
 	public function buildForm(FormBuilderInterface $builder,array $options)
 	{
-		$builder
-			->add('departureAt')
-			->add('departureLocation')
-			->add('returnAt')
-			->add('returnLocation')
-		;
+		$builder->add('carClass')
+        ;
 	}
 
 	/**
@@ -30,7 +26,7 @@ class ReservationLocationType extends AbstractType
 	 */
 	public function getName()
 	{
-		return 'reservation_location';	
+		return 'reservation_car';
 	}
 
 	/**
@@ -38,13 +34,10 @@ class ReservationLocationType extends AbstractType
 	 */
 	public function getDefaultOptions(array $options)
 	{
-		array(
-			'validation_groups' => array('reservation_location'),
+		return array(
+			'validation_group' => array('reservation_car')
 		);
 	}
+	
 }
 
-
-
-
-?>
