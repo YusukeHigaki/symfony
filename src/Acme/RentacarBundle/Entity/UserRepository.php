@@ -12,4 +12,39 @@ use Doctrine\ORM\EntityRepository;
  */
 class UserRepository extends EntityRepository
 {
+    public function createUser(User $user)
+    {
+        $manager = $this->getEntityManager();
+
+        $other = $this->findOneById(array('email'=>$user->getEmail()));
+        if($other){
+            throw new ¥InvalidArgumentException('Duplicated user email');
+        }
+
+        $user->setActivationKey($this->issueActivationKey());
+
+        $manager->persist($user);
+        $manager->flush();
+
+    }
+
+    public function issueActivationKey()
+    {
+        $bytes = false;
+        if(function_exists('openssl_random_pseudo_bytes')){
+            $bytes = openssl_random_pseudo_bytes(32,$strong);
+
+            if(true !== $strong){
+                $bytes = false;
+            }
+        }
+
+        if(false === $bytes){
+            $bytes = hash('sha256',uniqid(mt_rand(),true),true);
+        }
+
+        $key = base_convert(bin2hex($bytes),16,36);
+
+        return $key;
+    }
 }

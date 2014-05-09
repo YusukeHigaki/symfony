@@ -4,6 +4,7 @@ namespace Acme\RentacarBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * User
@@ -13,11 +14,14 @@ use Gedmo\Mapping\Annotation as Gedmo;
  */
 class User
 {
+    const PASSWORD_SALT = '9q834fh98ytq98ethq0pasdf';
+
     /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
@@ -25,6 +29,11 @@ class User
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=100, nullable=false)
+     *
+     * @Assert\NotBlank
+     * @Assert\Length(
+     *    max = "100"
+     * )
      */
     private $name;
 
@@ -32,6 +41,9 @@ class User
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=100, nullable=false)
+     *
+     * @Assert\NotBlank
+     * @Assert\Email
      */
     private $email;
 
@@ -46,6 +58,8 @@ class User
      * @var string
      *
      * @ORM\Column(name="tel", type="string", length=20, nullable=false)
+     *
+     * @Assert\NotBlank
      */
     private $tel;
 
@@ -53,6 +67,9 @@ class User
      * @var \DateTime
      *
      * @ORM\Column(name="birthday", type="date", nullable=false)
+     *
+     * @Assert\NotBlank
+     * @Assert\Date
      */
     private $birthday;
 
@@ -79,7 +96,15 @@ class User
      */
     private $updatedAt;
 
-
+    /**
+     * @var string
+     *
+     * @Assert\NotBlank
+     * @Assert\Length(
+     *    min = "8"
+     * )
+     */
+    private $rawPassword;
 
     /**
      * Set id
@@ -97,7 +122,7 @@ class User
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -209,6 +234,7 @@ class User
         return $this;
     }
 
+
     /**
      * Get birthday
      *
@@ -287,4 +313,47 @@ class User
     {
         return $this->updatedAt;
     }
+
+    /**
+     * Set rawPassword
+     *
+     * @param string $rawPassword
+     */
+    public function setRawPassword($rawPassword)
+    {
+        $this->rawPassword = $rawPassword;
+        $this->password = self::hashPassword($rawPassword);
+    }
+
+    public function getRawPassword()
+    {
+        return $this->rawPassword;
+    }
+
+    /**
+     * Is given password valid?
+     *
+     * @param string $rawPassword
+     * @return boolean
+     */
+    public function isValidPassword($rawPassword)
+    {
+        if($this->password === self::hashPassword($rawPassword)){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Hash Password
+     *
+     * @param string $rawPassword
+     * @return string
+     */
+    protected static function hashPassword($rawPassword)
+    {
+        return sha1($rawPassword,self::PASSWORD_SALT);
+    }
+
+
 }

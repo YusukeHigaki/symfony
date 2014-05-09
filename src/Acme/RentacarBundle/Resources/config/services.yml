@@ -10,3 +10,9 @@ services:
         arguments:
             - @mailer
             - @twig
+
+    rentacar.user_service:
+        class: Acme\RentacarBundle\Service\UserService
+        arguments:
+            - @doctrine
+            - @rentacar.mail_service

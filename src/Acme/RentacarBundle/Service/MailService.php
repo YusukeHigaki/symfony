@@ -75,4 +75,29 @@ class MailService
         return $this->twig->loadTemplate($template)->render($variables);
     }
 
+    public function sendRegistrationConfirmMail(User $user)
+    {
+        $body = $this->render('AcmeRentacarBundle:Mail:registrationConfirm.txt.twig',array('user'=>$user));
+        $message = \Swift_Message::newInstance()
+            ->setSubject('仮登録が完了しました')
+            ->setFrom(array('noreply@example.com'),'PHPレンタカー')
+            ->setTo($user->getEmail())
+            ->setBody($body)
+        ;
+
+        $this->mailer->send($message);
+    }
+
+    public function sendDuplicatedRegistrationMail(User $user)
+    {
+        $body = $this->render('AcmeRentacarBundle:Mail:duplicatedRegistration.txt.twig',array('user' => $user));
+        $message = \Swift_Message::newInstance()
+            ->setSubject('既に登録されたメールアドレスです')
+            ->setFrom(array('noreply@example.com'),'PHPレンタカー')
+            ->setTo($user->getEmail())
+            ->setBody($body)
+        ;
+
+        $this->mailer->send($message);
+    }
 }
