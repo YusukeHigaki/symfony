@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="137a3b2a-8395-4f52-944e-046ff5256174" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/UserController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/UserRegistrationType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/UserService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/User/confirm.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/duplicateRegistration.txt.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/User/register.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/registrationConfirm.txt.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundles/Crocos/SecurityBundle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/LoginProxy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/LoginType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/SecurityController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Security/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitmodules" afterPath="$PROJECT_DIR$/.gitmodules" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/AppController.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/AppController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/UserRepository.php" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/UserRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/autoload.php" afterPath="$PROJECT_DIR$/app/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony.iml" afterPath="$PROJECT_DIR$/.idea/symfony.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -40,54 +40,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/UserController.php">
+      <file leaf-file-name="SecurityController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/SecurityController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1208" selection-end="1208" vertical-scroll-proportion="-16.333334" vertical-offset="343" max-vertical-offset="1095">
+            <state line="48" column="0" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-11.25" vertical-offset="450" max-vertical-offset="1095">
               <folding>
                 <element signature="e#6#95#0" expanded="true" />
-                <element signature="e#140#199#0" expanded="true" />
+                <element signature="e#140#184#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <file leaf-file-name="base.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="-7.92" vertical-offset="99" max-vertical-offset="675">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/UserService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="21" selection-start="320" selection-end="320" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="600">
-              <folding>
-                <element signature="e#6#95#0" expanded="true" />
-                <element signature="e#137#183#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailService.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="30" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.8006644" vertical-offset="463" max-vertical-offset="1560">
-              <folding>
-                <element signature="e#137#180#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="46" column="10" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.48954704" vertical-offset="409" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -136,19 +104,25 @@
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/UserRegistrationType.php" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/User/register.html.twig" />
-        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/UserRepository.php" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/registrationConfirm.txt.twig" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/duplicateRegistration.txt.twig" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/User/confirm.html.twig" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/UserService.php" />
-        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/autoload.php" />
-        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/UserRepository.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/LoginProxy.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Form/LoginType.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/SecurityController.php" />
+        <option value="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -156,8 +130,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="267" />
     <option name="y" value="1102" />
-    <option name="width" value="1366" />
-    <option name="height" value="746" />
+    <option name="width" value="1364" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -213,6 +187,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,7 +282,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Service" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,22 +338,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistory" value="&#10;comp&#10;composer.js&#10;commit&#10;git&#10;project setting&#10;version&#10;Reservation/_ca&#10;config.y&#10;restoreReservation&#10;editor&#10;font&#10;carClass&#10;ReservationType" />
+    <property name="SearchEverywhereHistory" value="&#10;flash&#10;comp&#10;composer.js&#10;commit&#10;git&#10;project setting&#10;version&#10;Reservation/_ca&#10;config.y&#10;restoreReservation&#10;editor&#10;font&#10;carClass&#10;ReservationType" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -385,6 +359,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Security" />
       <recent name="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/User" />
       <recent name="$PROJECT_DIR$/src/Acme/StoreBundle/Form/Type" />
       <recent name="$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation" />
@@ -460,16 +435,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="267" y="1102" width="1366" height="746" extended-state="0" />
+    <frame x="267" y="1102" width="1364" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42813456" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16055046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4279141" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.452454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06670224" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27114803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2753404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33486238" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -477,10 +451,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -498,9 +473,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18623266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -520,42 +495,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://db-console:/1ee8a127/cc9e97ec-80d3-4989-8d74-212f8bd46583/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.392779" vertical-offset="346" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="234" selection-end="234" vertical-scroll-proportion="0.18052517" vertical-offset="0" max-vertical-offset="914" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationLocationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="558" selection-end="558" vertical-scroll-proportion="0.50875276" vertical-offset="0" max-vertical-offset="914">
-          <folding>
-            <element signature="e#43#83#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Reservation/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.55798686" vertical-offset="0" max-vertical-offset="914" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/StoreBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="65" selection-start="246" selection-end="246" vertical-scroll-proportion="0.08417509" vertical-offset="0" max-vertical-offset="891" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/StoreBundle/Resources/config/validation.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="62" selection-end="62" vertical-scroll-proportion="0.032822758" vertical-offset="0" max-vertical-offset="914" />
@@ -601,11 +540,6 @@
         <state line="16" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.3986711" vertical-offset="0" max-vertical-offset="602" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationCarType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="439" selection-end="439" vertical-scroll-proportion="0.5232558" vertical-offset="60" max-vertical-offset="735" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationOptionType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="1" selection-start="276" selection-end="276" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="555" />
@@ -643,9 +577,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="11" selection-start="11679" selection-end="11679" vertical-scroll-proportion="0.37883958" vertical-offset="4653" max-vertical-offset="26805">
-          <folding />
-        </state>
+        <state line="325" column="11" selection-start="11679" selection-end="11679" vertical-scroll-proportion="0.37883958" vertical-offset="4653" max-vertical-offset="26805" />
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -653,16 +585,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/reservation.txt.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="21" selection-start="488" selection-end="488" vertical-scroll-proportion="0.64784056" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="20" selection-end="21" vertical-scroll-proportion="0.024916943" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
+        <state line="26" column="21" selection-start="488" selection-end="488" vertical-scroll-proportion="0.64784056" vertical-offset="0" max-vertical-offset="602" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormTypeInterface.php">
@@ -672,67 +595,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="0.3115016" vertical-offset="0" max-vertical-offset="626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.35942492" vertical-offset="0" max-vertical-offset="626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/Location.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="63" selection-end="64" vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="2190">
-          <folding />
-        </state>
+        <state line="4" column="18" selection-start="63" selection-end="64" vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="2190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/CarClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="25" selection-start="3570" selection-end="3572" vertical-scroll-proportion="0.6486486" vertical-offset="2913" max-vertical-offset="5910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/ReservationRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/ReservationService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="1340" selection-end="1343" vertical-scroll-proportion="0.64737797" vertical-offset="422" max-vertical-offset="975">
-          <folding />
-        </state>
+        <state line="208" column="25" selection-start="3570" selection-end="3572" vertical-scroll-proportion="0.6486486" vertical-offset="2913" max-vertical-offset="5910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/User/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="29" selection-start="2446" selection-end="2446" vertical-scroll-proportion="0.77242523" vertical-offset="375" max-vertical-offset="1020">
-          <folding />
-        </state>
+        <state line="56" column="29" selection-start="2446" selection-end="2446" vertical-scroll-proportion="0.77242523" vertical-offset="375" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/duplicateRegistration.txt.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.14950167" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.14950167" vertical-offset="0" max-vertical-offset="602" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Mail/registrationConfirm.txt.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.22425249" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.22425249" vertical-offset="0" max-vertical-offset="602" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/Reservation.php">
@@ -744,55 +629,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.67275745" vertical-offset="0" max-vertical-offset="840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/User/confirm.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.24916944" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.24916944" vertical-offset="0" max-vertical-offset="602" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppCache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="521">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="173" selection-end="219" vertical-scroll-proportion="-0.23316061" vertical-offset="240" max-vertical-offset="3330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="475" selection-end="475" vertical-scroll-proportion="0.5729167" vertical-offset="0" max-vertical-offset="5475">
-          <folding>
-            <element signature="e#46#78#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="521" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="67" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.7425249" vertical-offset="108" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="48" selection-start="244" selection-end="244" vertical-scroll-proportion="0.19933555" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
+        <state line="37" column="67" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.7425249" vertical-offset="108" max-vertical-offset="915" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/UserRegistrationType.php">
@@ -802,53 +651,171 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/UserController.php">
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1208" selection-end="1208" vertical-scroll-proportion="-16.333334" vertical-offset="343" max-vertical-offset="1095">
+        <state line="94" column="44" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.6666667" vertical-offset="935" max-vertical-offset="1560">
           <folding>
-            <element signature="e#6#95#0" expanded="true" />
-            <element signature="e#140#199#0" expanded="true" />
+            <element signature="e#137#180#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/UserService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="25" selection-start="2044" selection-end="2069" vertical-scroll-proportion="0.775" vertical-offset="645" max-vertical-offset="1245">
+        <state line="18" column="21" selection-start="320" selection-end="320" vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="624">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="-7.92" vertical-offset="99" max-vertical-offset="675">
+        <state line="15" column="27" selection-start="552" selection-end="552" vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/UserService.php">
+    <entry file="file://$PROJECT_DIR$/app/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="320" selection-end="320" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="600">
+        <state line="17" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="0.4" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="228" selection-end="228" vertical-scroll-proportion="0.225" vertical-offset="0" max-vertical-offset="600">
+          <folding>
+            <element signature="e#49#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="140" selection-end="309" vertical-scroll-proportion="0.2" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationCarType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="11" selection-start="54" selection-end="55" vertical-scroll-proportion="0.05" vertical-offset="15" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="362" column="21" selection-start="6221" selection-end="6221" vertical-scroll-proportion="0.8" vertical-offset="4920" max-vertical-offset="5550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/ReservationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.37437603" vertical-offset="0" max-vertical-offset="601">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/LoginProxy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="16" selection-start="288" selection-end="288" vertical-scroll-proportion="0.28596187" vertical-offset="45" max-vertical-offset="765">
           <folding>
             <element signature="e#6#95#0" expanded="true" />
-            <element signature="e#137#183#0" expanded="true" />
+            <element signature="e#134#180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/ReservationLocationType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+        <state line="5" column="0" selection-start="43" selection-end="133" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="840">
+          <folding>
+            <element signature="e#43#83#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/ReservationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="173" selection-end="219" vertical-scroll-proportion="-0.05" vertical-offset="135" max-vertical-offset="3330">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/MailService.php">
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="30" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.8006644" vertical-offset="463" max-vertical-offset="1560">
+        <state line="33" column="8" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.825" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="57" selection-start="614" selection-end="621" vertical-scroll-proportion="0.46206897" vertical-offset="47" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Service/ReservationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="20" selection-start="547" selection-end="547" vertical-scroll-proportion="0.375" vertical-offset="150" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Entity/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="54" selection-start="1516" selection-end="1516" vertical-scroll-proportion="0.6" vertical-offset="600" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Form/LoginType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="496" selection-end="496" vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="600">
           <folding>
-            <element signature="e#137#180#0" expanded="true" />
+            <element signature="e#134#174#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-11.25" vertical-offset="450" max-vertical-offset="1095">
+          <folding>
+            <element signature="e#6#95#0" expanded="true" />
+            <element signature="e#140#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/RentacarBundle/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="10" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.48954704" vertical-offset="409" max-vertical-offset="1530">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,7 +9,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Symfony\Bundle\SecurityBundle\SecurityBundle(),
+//            new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Acme\RentacarBundle\AcmeRentacarBundle(),
 			new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Acme\StoreBundle\AcmeStoreBundle(),
+            new Crocos\SecurityBundle\CrocosSecurityBundle(),
 		);
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

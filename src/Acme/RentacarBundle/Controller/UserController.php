@@ -51,17 +51,24 @@ class UserController extends AppController
     public function confirmAction()
     {
         return array();
-
     }
 
     /**
      * @Route("/activate",name="user_activate")
      * @Template
      */
-    public function ActivateAction()
+    public function ActivateAction(Request $request)
     {
-        return array();
+        $activationKey = $request->query->get('key');
 
+        if(null !== $activationKey){
+            $userRepository = $this->get('doctrine')->getRepository('AcmeRentacarBundle:User');
+            if(null !== $userRepository->activateUser($activationKey)){
+                $message = 'ユーザー登録完了しました。ログイン後、予約が行えるようになります。';
+                $request->getSession()->setFlash('success',$message);
+            }
+        }
+        return $this->redirect($this->generateUrl('login'));
     }
 
 }

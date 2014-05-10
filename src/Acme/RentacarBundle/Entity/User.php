@@ -355,5 +355,12 @@ class User
         return sha1($rawPassword,self::PASSWORD_SALT);
     }
 
+    public function isEnabled()
+    {
+        if (null === $this->activationKey) {
+            return true;
+        }
+        return false;
+    }
 
 }

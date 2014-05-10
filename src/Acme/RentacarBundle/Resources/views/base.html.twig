@@ -41,6 +41,24 @@
                 <a href="{{ path('reservation_car') }}">車種一覧</a>
               </li>
             </ul>
+            {% if _security.isAuthenticated %}
+            <ul class="nav pull-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-user icon-white"></i>{{ _security.user.name }}さん
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="nav pull-right">
+                        <li><a href="{{ path('logout') }}">ログアウト</a></li>
+                    </ul>
+                </li>
+            </ul>
+            {% else %}
+            <ul class="nav pull-right">
+                <li><a href="{{ path('login') }}">ログイン</a></li>
+                <li><a href="{{ path('user_register') }}">会員登録</a></li>
+            </ul>
+            {% endif %}
           {% endblock nav %}
         </div>
       </div>

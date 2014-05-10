@@ -47,4 +47,30 @@ class UserRepository extends EntityRepository
 
         return $key;
     }
+
+    public function activateUser($activationKey)
+    {
+        $manager = $this->getEntityManager();
+        $user = $manager->findOneBy(array('activationKey' => $activationKey));
+
+        if(!$user){
+            return ;
+        }
+
+        $user->setActivationKey(null);
+        $manager->flush();
+        return $user;
+    }
+
+    public function authenticateUser($email,$password)
+    {
+        $user = $this->findOneBy(array(
+            'email' => $email,
+        ));
+        if($user && $user->isValidPassword($password) && $user->isEnabled()){
+            return $user;
+        }
+        return;
+
+    }
 }
