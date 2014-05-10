@@ -92,6 +92,7 @@ Class ReservationController extends AppController
     /**
     * @Route("/option",name="reservation_option")
     * @Template
+    * @Secure
     */
 	public function optionAction(Request $request)
 	{
@@ -125,6 +126,7 @@ Class ReservationController extends AppController
 /**
  * @Route("/confirm",name="reservation_confirm")
  * @Template
+ * @Secure
  */
 	public function confirmAction(Request $request)
 	{
@@ -136,9 +138,8 @@ Class ReservationController extends AppController
         $reservation->calculateAmount();
 
         if('POST' === $request->getMethod()){
-            $user = $this->get('doctrine')->getRepository('AcmeRentacarBundle:User')->find(1);
             $service = $this->get('rentacar.reservation_service');
-            $service->saveReservation($reservation , $user);
+            $service->saveReservation($reservation , $this->getUser());
 
             $session = $request->getSession();
             $session->remove('reservation/location');
@@ -156,6 +157,7 @@ Class ReservationController extends AppController
 /**
  * @Route("/finish",name="reservation_finish")
  * @Template
+ * @Secure
  */
 	public function finishAction(Request $request)
 	{
